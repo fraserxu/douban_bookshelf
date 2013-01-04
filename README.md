@@ -1,8 +1,6 @@
-douban_bookshelf
+Douban Bookshelf
 ================
 
-Demo Page: [bookshelf](http://coursegarden.com/bookshelf/)
-----------------------------------------------------------
 
 A simple bookshelf for the new year! 
 
@@ -26,3 +24,4 @@ Feel free to add it to your own page.
 No big deal, just a simple approach to motivate yourself to read more and gain more!
 
 
+Demo Page: [bookshelf](http://coursegarden.com/bookshelf/) 
