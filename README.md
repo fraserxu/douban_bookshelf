@@ -1,6 +1,9 @@
 douban_bookshelf
 ================
 
+Demo Page: [bookshelf](http://coursegarden.com/bookshelf/)
+----------------------------------------------------------
+
 A simple bookshelf for the new year! 
 
 These are all books that I've read, I'll read, and I'm reading, and I recommend that for you too.
