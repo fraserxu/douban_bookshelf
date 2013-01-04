@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <title>The Bookshelf | Coursegarden</title>
+  <link rel="stylesheet" href="./css/style.css"></head>
+
+<body class="page">
+  <div class="page-wrap">
+    <div class="group">
+      <h1>我的书架</h1>
+      <img src="./img/bookshelf-title.jpg" alt="my-book-shelf">
+
+      <div class="books-note">
+        <p class="ita">
+          These are all books that I've read, I'll read, and I'm reading, and I recommend that for you too.
+        </p>
+        <p>  
+          下面是一些我读过的，想读的，和正在读的书，2013，从读书开始！
+        </p>
+      </div>
+
+      <script type="text/x-handlebars">
+          {{#each App.booksController}}
+            <div class="shelf">
+              <p class="book-wrap">
+                <a {{bindAttr href="book_source"}}>
+                  <img class="book" {{bindAttr src="book_avatar"}}>
+                </a>
+              </p>
+              <h3>
+                <a >{{book_title}}</a>
+                <span class="tag">Status: {{book_status}} ...</span>
+                <br>
+              </h3>
+
+              <p class="book-author">
+                <span>by:</span>
+                {{book_author}}</p>
+              <p>{{book_summary}}</p>
+              <p>
+                <a class="button" {{bindAttr href="book_source"}}>豆瓣链接</a>
+              </p>
+            </div>
+          {{/each}}
+      </script>
+    </div>
+  </div>
+  <footer class="sixteen columns clearfix" id="colophon" role="contentinfo">
+    <ul class="nav">
+      <li class="made">CourseGarden</li>
+      <li><a href="./resume.html">Profile</a></li>
+      <li><a href="http://www.weibo.com/xvfeng123"><i class="icon-weibo"></i>@xvfeng</a></li>
+    </ul>     
+  </footer>
+
+<script>window.jQuery || document.write('<script src="./js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="./js/libs/handlebars-1.0.0.beta.6.js"></script>
+<script src="./js/libs/ember-1.0.pre.min.js"></script>
+<script src="./js/app.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25335595-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+
+</body>
+</html>
