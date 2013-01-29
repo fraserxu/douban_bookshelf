@@ -24,4 +24,4 @@ Feel free to add it to your own page.
 No big deal, just a simple approach to motivate yourself to read more and gain more!
 
 
-Demo Page: [bookshelf](http://coursegarden.com/bookshelf/) 
+Demo Page: [bookshelf](http://books.xvfeng.me) 
